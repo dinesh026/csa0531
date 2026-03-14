@@ -1,0 +1,9 @@
+CREATE TABLE log_table(msg VARCHAR(50));
+
+DELIMITER //
+CREATE TRIGGER student_insert
+AFTER INSERT ON student
+FOR EACH ROW
+INSERT INTO log_table VALUES('New student added');
+// 
+DELIMITER ;
