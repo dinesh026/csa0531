@@ -1,0 +1,9 @@
+CREATE TABLE product(
+id INT,
+name VARCHAR(50),
+price INT
+);
+
+INSERT INTO product VALUES(1,'Pen',10);
+UPDATE product SET price=15 WHERE id=1;
+DELETE FROM product WHERE id=1;
