@@ -1,0 +1,9 @@
+CREATE TABLE employee(
+id INT,
+name VARCHAR(50),
+salary INT
+);
+
+INSERT INTO employee VALUES(1,'Ram',20000);
+INSERT INTO employee VALUES(2,'Ravi',25000);
+SELECT * FROM employee;
