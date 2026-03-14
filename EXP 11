@@ -1,0 +1,9 @@
+SELECT student.id,student.name,department.dept_name
+FROM student
+INNER JOIN department
+ON student.dept_id=department.dept_id;
+
+SELECT student.name,department.dept_name
+FROM student
+LEFT JOIN department
+ON student.dept_id=department.dept_id;
