@@ -1,0 +1,7 @@
+CREATE VIEW emp_view AS
+SELECT name,salary FROM employee;
+
+SELECT * FROM emp_view;
+
+CREATE INDEX idx_salary
+ON employee(salary);
