@@ -1,0 +1,5 @@
+CREATE USER 'user1'@'localhost' IDENTIFIED BY '1234';
+GRANT SELECT, INSERT ON employee TO 'user1'@'localhost';
+SHOW GRANTS FOR 'user1'@'localhost';
+REVOKE INSERT ON employee FROM 'user1'@'localhost';
+FLUSH PRIVILEGES;
