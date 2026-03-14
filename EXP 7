@@ -1,0 +1,5 @@
+SELECT * FROM employee;
+SELECT * FROM employee WHERE salary>20000;
+SELECT * FROM employee WHERE name='Ram';
+SELECT * FROM employee WHERE name LIKE 'R%';
+SELECT name,salary FROM employee WHERE salary>=25000;
