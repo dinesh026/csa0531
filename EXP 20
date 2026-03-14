@@ -1,0 +1,5 @@
+SELECT REPLACE('Hello World','World','SQL');
+SELECT REPEAT('Hi ',3);
+SELECT REVERSE('Database');
+SELECT LEFT('Database',4);
+SELECT RIGHT('Database',4);
