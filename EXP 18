@@ -1,0 +1,11 @@
+DELIMITER //
+CREATE PROCEDURE cursor_demo()
+BEGIN
+DECLARE ename VARCHAR(50);
+DECLARE cur CURSOR FOR SELECT name FROM employee;
+OPEN cur;
+FETCH cur INTO ename;
+SELECT ename;
+CLOSE cur;
+END //
+DELIMITER ;
